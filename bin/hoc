@@ -52,6 +52,12 @@ opts = Slop.parse(args, strict: true, help: true) do |o|
     'Directory to scan',
     default: '.'
   )
+  o.string(
+    '-a',
+    '--author',
+    'Filter to show only HoC for the given user',
+    default: ''
+  )
 end
 
 if opts.help?
