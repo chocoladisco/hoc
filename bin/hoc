@@ -65,7 +65,7 @@ if opts.help?
   exit
 end
 
-if opts[:author]
+if opts[:author] != ''
   puts "Showing the HoC for the author #{opts[:author]}"
 end
 
