@@ -65,6 +65,10 @@ if opts.help?
   exit
 end
 
+if opts[:author]
+  puts "Showing the HoC for the author #{opts[:author]}"
+end
+
 Encoding.default_external = Encoding::UTF_8
 Encoding.default_internal = Encoding::UTF_8
 
